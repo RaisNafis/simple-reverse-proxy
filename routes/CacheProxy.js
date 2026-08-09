@@ -44,7 +44,7 @@ const cleanExpiredCache = () => {
 // Run cache cleanup every 5 minutes
 setInterval(cleanExpiredCache, 5 * 60 * 1000);
 
-const blacklist = ["samurai_lps.xml","golem_of_lago.xml","mario_smh.xml","hta_weapon.xml","alucard.xml","buster_ic.xml","sonic_ic.xml","cat_ic.xml"];
+const blacklist = [];
 
 // setting the route
 router.get("/:ip/cache/*", async (req, res, next) => {
