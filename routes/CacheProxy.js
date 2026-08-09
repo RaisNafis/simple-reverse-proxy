@@ -47,7 +47,7 @@ setInterval(cleanExpiredCache, 5 * 60 * 1000);
 const blacklist = ["samurai_lps.xml","golem_of_lago.xml","mario_smh.xml","hta_weapon.xml","alucard.xml","buster_ic.xml","sonic_ic.xml","cat_ic.xml"];
 
 // setting the route
-router.get("/:ip/cache/*", async (req, res, next) => {
+router.get("/100.48.108.239/cache/*", async (req, res, next) => {
     // check if ip is an ip
     if (!req.params.ip.match(/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/)) {
         return next();
